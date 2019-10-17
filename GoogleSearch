@@ -1,0 +1,21 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import java.sql.Driver;
+
+public class GoogleSearchTest {
+
+
+    @Test
+    public void test0001() {
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\laris\\IdeaProjects\\sepJavaTestNG\\src\\test\\resouces\\drivers\\geckodriver.exe");
+
+        WebDriver driver = new FirefoxDriver();
+
+        driver.get("https://www.google.com");
+
+
+    }
+}
